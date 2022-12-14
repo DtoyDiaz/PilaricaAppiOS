@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func deleteButton(_ sender: Any) {
+        let nextVC = HomeTableViewController(nibName: "HomeTableViewController", bundle: nil)
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
 }
 

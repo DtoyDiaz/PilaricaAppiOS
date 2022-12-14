@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6440D2E293FA10700917CD1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D2C293FA10700917CD1 /* HomeTableViewCell.swift */; };
+		C6440D2F293FA10700917CD1 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D2D293FA10700917CD1 /* HomeTableViewCell.xib */; };
+		C6440D32293FA14200917CD1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D30293FA14200917CD1 /* HomeTableViewController.swift */; };
+		C6440D33293FA14200917CD1 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D31293FA14200917CD1 /* HomeTableViewController.xib */; };
+		C6440D35293FFA8800917CD1 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D34293FFA8800917CD1 /* ShoppingList.swift */; };
+		C6440D3D2947CC1700917CD1 /* ShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D3B2947CC1700917CD1 /* ShoppingDetailViewController.swift */; };
+		C6440D3E2947CC1700917CD1 /* ShoppingDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D3C2947CC1700917CD1 /* ShoppingDetailViewController.xib */; };
+		C6440D422949316400917CD1 /* ShoppingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */; };
+		C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */; };
+		C6440D45294A1C2B00917CD1 /* AjiacoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D44294A1C2B00917CD1 /* AjiacoList.swift */; };
 		C6AC155D29382644008202FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC155C29382644008202FA /* AppDelegate.swift */; };
 		C6AC155F29382644008202FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC155E29382644008202FA /* SceneDelegate.swift */; };
 		C6AC156129382644008202FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC156029382644008202FA /* ViewController.swift */; };
@@ -17,6 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6440D2C293FA10700917CD1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C6440D2D293FA10700917CD1 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		C6440D30293FA14200917CD1 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C6440D31293FA14200917CD1 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
+		C6440D34293FFA8800917CD1 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		C6440D3B2947CC1700917CD1 /* ShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailViewController.swift; sourceTree = "<group>"; };
+		C6440D3C2947CC1700917CD1 /* ShoppingDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingDetailViewController.xib; sourceTree = "<group>"; };
+		C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailTableViewCell.swift; sourceTree = "<group>"; };
+		C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingDetailTableViewCell.xib; sourceTree = "<group>"; };
+		C6440D44294A1C2B00917CD1 /* AjiacoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjiacoList.swift; sourceTree = "<group>"; };
 		C6AC155929382644008202FA /* PilaricaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilaricaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC155C29382644008202FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC155E29382644008202FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +59,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6440D26293F94BA00917CD1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C6440D30293FA14200917CD1 /* HomeTableViewController.swift */,
+				C6440D31293FA14200917CD1 /* HomeTableViewController.xib */,
+				C6440D2C293FA10700917CD1 /* HomeTableViewCell.swift */,
+				C6440D2D293FA10700917CD1 /* HomeTableViewCell.xib */,
+				C6440D34293FFA8800917CD1 /* ShoppingList.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C6440D27293F951400917CD1 /* ShoppingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C6440D3B2947CC1700917CD1 /* ShoppingDetailViewController.swift */,
+				C6440D3C2947CC1700917CD1 /* ShoppingDetailViewController.xib */,
+				C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */,
+				C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */,
+				C6440D44294A1C2B00917CD1 /* AjiacoList.swift */,
+			);
+			path = ShoppingDetail;
+			sourceTree = "<group>";
+		};
 		C6AC155029382644008202FA = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +102,8 @@
 		C6AC155B29382644008202FA /* PilaricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6440D27293F951400917CD1 /* ShoppingDetail */,
+				C6440D26293F94BA00917CD1 /* Home */,
 				C6AC155C29382644008202FA /* AppDelegate.swift */,
 				C6AC155E29382644008202FA /* SceneDelegate.swift */,
 				C6AC156029382644008202FA /* ViewController.swift */,
@@ -128,9 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6440D3E2947CC1700917CD1 /* ShoppingDetailViewController.xib in Resources */,
 				C6AC156C29382648008202FA /* LaunchScreen.storyboard in Resources */,
 				C6AC156929382648008202FA /* Assets.xcassets in Resources */,
 				C6AC156429382644008202FA /* Main.storyboard in Resources */,
+				C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */,
+				C6440D33293FA14200917CD1 /* HomeTableViewController.xib in Resources */,
+				C6440D2F293FA10700917CD1 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +192,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AC156129382644008202FA /* ViewController.swift in Sources */,
+				C6440D32293FA14200917CD1 /* HomeTableViewController.swift in Sources */,
+				C6440D2E293FA10700917CD1 /* HomeTableViewCell.swift in Sources */,
+				C6440D3D2947CC1700917CD1 /* ShoppingDetailViewController.swift in Sources */,
 				C6AC155D29382644008202FA /* AppDelegate.swift in Sources */,
 				C6AC156729382644008202FA /* PilaricaApp.xcdatamodeld in Sources */,
+				C6440D45294A1C2B00917CD1 /* AjiacoList.swift in Sources */,
+				C6440D35293FFA8800917CD1 /* ShoppingList.swift in Sources */,
 				C6AC155F29382644008202FA /* SceneDelegate.swift in Sources */,
+				C6440D422949316400917CD1 /* ShoppingDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
