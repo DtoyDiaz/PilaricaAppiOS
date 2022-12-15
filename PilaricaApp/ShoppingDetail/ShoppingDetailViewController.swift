@@ -30,7 +30,7 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         itemListTableView.dataSource = self
         itemListTableView.delegate = self
         
-        let shoppingDetailViewCell = UINib(nibName: "ShoppingDetailViewCell", bundle: nil)
+        let shoppingDetailViewCell = UINib(nibName: "ShoppingDetailTableViewCell", bundle: nil)
         itemListTableView.register(shoppingDetailViewCell, forCellReuseIdentifier: "ShoppingViewCell")
     }
     
