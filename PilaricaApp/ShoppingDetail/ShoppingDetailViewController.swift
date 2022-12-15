@@ -31,7 +31,7 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         itemListTableView.delegate = self
         
         let shoppingDetailViewCell = UINib(nibName: "ShoppingDetailViewCell", bundle: nil)
-        itemListTableView.register(shoppingDetailViewCell, forCellReuseIdentifier: "ShoppingDetailViewCell")
+        itemListTableView.register(shoppingDetailViewCell, forCellReuseIdentifier: "ShoppingViewCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,7 +39,7 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellDetail: ShoppingDetailTableViewCell = itemListTableView.dequeueReusableCell(withIdentifier: "ShoppingDetailTableViewCell", for: indexPath) as! ShoppingDetailTableViewCell
+        let cellDetail: ShoppingDetailTableViewCell = itemListTableView.dequeueReusableCell(withIdentifier: "ShoppingViewCell", for: indexPath) as! ShoppingDetailTableViewCell
         let itemDetailList: AjiacoList = ajiacoList[indexPath.row]
         cellDetail.cellConfiguration(ajiacoList: itemDetailList)
         return cellDetail
