@@ -9,7 +9,6 @@ import UIKit
 
 class ShoppingDetailTableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var checkBox: UISwitch!
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var unLabel: UILabel!
@@ -27,6 +26,5 @@ class ShoppingDetailTableViewCell: UITableViewCell {
         itemLabel.text = ajiacoList.itemName
         unLabel.text = ajiacoList.itemUn
         amountLabel.text = String(ajiacoList.itemAmount)
-
     }
 }

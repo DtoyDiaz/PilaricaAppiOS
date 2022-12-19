@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-nQ-KVI">
-                                <rect key="frame" x="87" y="288" width="240" height="128"/>
+                                <rect key="frame" x="87" y="311" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="dO9-hG-EZx"/>
                                     <constraint firstAttribute="width" constant="240" id="liJ-pE-KgM"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4E-ge-it1">
-                                <rect key="frame" x="150" y="596" width="114" height="33.5"/>
+                                <rect key="frame" x="150" y="519" width="114" height="33.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="LoginButton">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
@@ -39,8 +39,8 @@
                         <constraints>
                             <constraint firstItem="C4E-ge-it1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="3Bm-Dh-xM3"/>
                             <constraint firstItem="4l6-nQ-KVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="6mr-U9-M7Z"/>
-                            <constraint firstItem="4l6-nQ-KVI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="KdM-GU-GLe"/>
-                            <constraint firstItem="C4E-ge-it1" firstAttribute="top" secondItem="4l6-nQ-KVI" secondAttribute="bottom" constant="180" id="Sxs-Aa-hwl"/>
+                            <constraint firstItem="4l6-nQ-KVI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="Qyc-3u-Tr1"/>
+                            <constraint firstItem="C4E-ge-it1" firstAttribute="top" secondItem="4l6-nQ-KVI" secondAttribute="bottom" constant="80" id="Sxs-Aa-hwl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4l6-nQ-KVI" secondAttribute="trailing" constant="87" id="W03-xF-cnG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4E-ge-it1" secondAttribute="trailing" constant="150" id="gNQ-K0-4O6"/>
                         </constraints>

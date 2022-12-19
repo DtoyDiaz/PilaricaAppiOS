@@ -17,6 +17,9 @@
 		C6440D422949316400917CD1 /* ShoppingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */; };
 		C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */; };
 		C6440D45294A1C2B00917CD1 /* AjiacoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D44294A1C2B00917CD1 /* AjiacoList.swift */; };
+		C6440D49294FCF5700917CD1 /* TempShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D47294FCF5700917CD1 /* TempShoppingDetailViewController.swift */; };
+		C6440D4A294FCF5700917CD1 /* TempShoppingDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D48294FCF5700917CD1 /* TempShoppingDetailViewController.xib */; };
+		C6440D4C295096E200917CD1 /* Avocato.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D4B295096E100917CD1 /* Avocato.swift */; };
 		C6AC155D29382644008202FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC155C29382644008202FA /* AppDelegate.swift */; };
 		C6AC155F29382644008202FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC155E29382644008202FA /* SceneDelegate.swift */; };
 		C6AC156129382644008202FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC156029382644008202FA /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 		C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C6440D44294A1C2B00917CD1 /* AjiacoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjiacoList.swift; sourceTree = "<group>"; };
+		C6440D47294FCF5700917CD1 /* TempShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempShoppingDetailViewController.swift; sourceTree = "<group>"; };
+		C6440D48294FCF5700917CD1 /* TempShoppingDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempShoppingDetailViewController.xib; sourceTree = "<group>"; };
+		C6440D4B295096E100917CD1 /* Avocato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avocato.swift; sourceTree = "<group>"; };
 		C6AC155929382644008202FA /* PilaricaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilaricaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC155C29382644008202FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC155E29382644008202FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,16 @@
 			path = ShoppingDetail;
 			sourceTree = "<group>";
 		};
+		C6440D46294FCE5A00917CD1 /* TempShoppingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C6440D47294FCF5700917CD1 /* TempShoppingDetailViewController.swift */,
+				C6440D48294FCF5700917CD1 /* TempShoppingDetailViewController.xib */,
+				C6440D4B295096E100917CD1 /* Avocato.swift */,
+			);
+			path = TempShoppingDetail;
+			sourceTree = "<group>";
+		};
 		C6AC155029382644008202FA = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +118,7 @@
 		C6AC155B29382644008202FA /* PilaricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6440D46294FCE5A00917CD1 /* TempShoppingDetail */,
 				C6440D27293F951400917CD1 /* ShoppingDetail */,
 				C6440D26293F94BA00917CD1 /* Home */,
 				C6AC155C29382644008202FA /* AppDelegate.swift */,
@@ -179,6 +196,7 @@
 				C6AC156929382648008202FA /* Assets.xcassets in Resources */,
 				C6AC156429382644008202FA /* Main.storyboard in Resources */,
 				C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */,
+				C6440D4A294FCF5700917CD1 /* TempShoppingDetailViewController.xib in Resources */,
 				C6440D33293FA14200917CD1 /* HomeTableViewController.xib in Resources */,
 				C6440D2F293FA10700917CD1 /* HomeTableViewCell.xib in Resources */,
 			);
@@ -196,7 +214,9 @@
 				C6440D2E293FA10700917CD1 /* HomeTableViewCell.swift in Sources */,
 				C6440D3D2947CC1700917CD1 /* ShoppingDetailViewController.swift in Sources */,
 				C6AC155D29382644008202FA /* AppDelegate.swift in Sources */,
+				C6440D4C295096E200917CD1 /* Avocato.swift in Sources */,
 				C6AC156729382644008202FA /* PilaricaApp.xcdatamodeld in Sources */,
+				C6440D49294FCF5700917CD1 /* TempShoppingDetailViewController.swift in Sources */,
 				C6440D45294A1C2B00917CD1 /* AjiacoList.swift in Sources */,
 				C6440D35293FFA8800917CD1 /* ShoppingList.swift in Sources */,
 				C6AC155F29382644008202FA /* SceneDelegate.swift in Sources */,

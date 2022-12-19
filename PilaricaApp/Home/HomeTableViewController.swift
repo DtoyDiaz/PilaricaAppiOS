@@ -24,7 +24,6 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         pilaricaListTable.dataSource = self
         pilaricaListTable.delegate = self
-        
         let homeTableViewCell = UINib(nibName: "HomeTableViewCell", bundle: nil)
         pilaricaListTable.register(homeTableViewCell, forCellReuseIdentifier: "HomeTableViewCell")
     }
@@ -41,8 +40,9 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        let nextVC = ShoppingDetailViewController(nibName: "ShoppingDetailViewController", bundle: nil)
+        let listSelected: ShoppingList  = exampleList[indexPath.row]
+        let nextVC: ShoppingDetailViewController = ShoppingDetailViewController(nibName: "ShoppingDetailViewController", bundle: nil)
+        nextVC.listTitleName = listSelected.name
         navigationController?.pushViewController(nextVC, animated: true)
     }
-    
 }

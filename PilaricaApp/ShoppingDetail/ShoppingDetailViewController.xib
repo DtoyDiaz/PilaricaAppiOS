@@ -21,8 +21,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxf-3b-XHJ">
-                    <rect key="frame" x="186" y="94" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxf-3b-XHJ">
+                    <rect key="frame" x="157" y="94" width="100" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="df1-5D-lnS"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -33,12 +36,12 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KcI-jJ-MZM">
-                    <rect key="frame" x="20" y="165" width="374" height="34"/>
+                    <rect key="frame" x="20" y="164.5" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-kS-oHY">
-                    <rect key="frame" x="20" y="229" width="374" height="800"/>
+                    <rect key="frame" x="20" y="228.5" width="374" height="800"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="800" id="deT-8l-m85"/>
@@ -50,16 +53,14 @@
             <constraints>
                 <constraint firstItem="NK2-kS-oHY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AQX-ee-Be2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KcI-jJ-MZM" secondAttribute="trailing" constant="20" id="F6X-wh-NNw"/>
-                <constraint firstItem="Xxf-3b-XHJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="LBI-PU-IYt"/>
                 <constraint firstItem="Xxf-3b-XHJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="O3F-5t-Exh"/>
                 <constraint firstItem="KcI-jJ-MZM" firstAttribute="top" secondItem="Xxf-3b-XHJ" secondAttribute="bottom" constant="50" id="PX5-Yg-kdW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NK2-kS-oHY" secondAttribute="trailing" constant="20" id="SdV-Wg-dQC"/>
                 <constraint firstItem="NK2-kS-oHY" firstAttribute="top" secondItem="KcI-jJ-MZM" secondAttribute="bottom" constant="30" id="Y8O-0v-GiW"/>
                 <constraint firstItem="KcI-jJ-MZM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dx5-nN-piz"/>
                 <constraint firstItem="KcI-jJ-MZM" firstAttribute="centerX" secondItem="Xxf-3b-XHJ" secondAttribute="centerX" id="exZ-PU-a1R"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xxf-3b-XHJ" secondAttribute="trailing" constant="186" id="iYd-0o-0dR"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="106"/>
+            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
         </view>
     </objects>
     <resources>

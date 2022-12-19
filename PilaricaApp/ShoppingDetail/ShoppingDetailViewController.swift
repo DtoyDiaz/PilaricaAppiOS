@@ -21,6 +21,8 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         AjiacoList(itemName: "Crema de leche", itemAmount: 1, itemUn: "Paquete")
     ]
     
+    var listTitleName: String = ""
+    
     @IBOutlet weak var listNameLabel: UILabel!
     @IBOutlet weak var descriptionListTextField: UITextField!
     @IBOutlet weak var itemListTableView: UITableView!
@@ -32,6 +34,7 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         
         let shoppingDetailViewCell = UINib(nibName: "ShoppingDetailTableViewCell", bundle: nil)
         itemListTableView.register(shoppingDetailViewCell, forCellReuseIdentifier: "ShoppingViewCell")
+        listNameLabel.text = listTitleName
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,5 +46,11 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         let itemDetailList: AjiacoList = ajiacoList[indexPath.row]
         cellDetail.cellConfiguration(ajiacoList: itemDetailList)
         return cellDetail
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let nextTempVC: TempShoppingDetailViewController = TempShoppingDetailViewController(nibName: "TempShoppingDetailViewController", bundle: nil)
+        nextTempVC.avocato = Avocato(itemName: "Aguacate zas", itemAmount: 2, itemUn: "Unidades", itemSeason: "Verano", itemOwner: "FresCampo", itemPrice: 5000, itemDate: "19-12-2022")
+        navigationController?.pushViewController(nextTempVC, animated: true)
     }
 }
