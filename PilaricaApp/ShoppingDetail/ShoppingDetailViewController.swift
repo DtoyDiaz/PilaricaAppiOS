@@ -21,12 +21,15 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         AjiacoList(itemName: "Crema de leche", itemAmount: 1, itemUn: "Paquete")
     ]
     
+    // MARK: - Internal Properties -
     var listTitleName: String = ""
     
+    // MARK: - IBOutlets -
     @IBOutlet weak var listNameLabel: UILabel!
     @IBOutlet weak var descriptionListTextField: UITextField!
     @IBOutlet weak var itemListTableView: UITableView!
     
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         itemListTableView.dataSource = self
@@ -37,6 +40,7 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         listNameLabel.text = listTitleName
     }
     
+    // MARK: - Private methods -
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ajiacoList.count
     }

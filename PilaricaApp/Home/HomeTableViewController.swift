@@ -18,8 +18,10 @@ class HomeTableViewController: UITableViewController {
         ShoppingList(name: "Materiales para el baño")
     ]
     
+    // MARK: - IBOutlets -
     @IBOutlet var pilaricaListTable: UITableView!
     
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         pilaricaListTable.dataSource = self
@@ -28,6 +30,7 @@ class HomeTableViewController: UITableViewController {
         pilaricaListTable.register(homeTableViewCell, forCellReuseIdentifier: "HomeTableViewCell")
     }
     
+    // MARK: - Private methods -
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: HomeTableViewCell = pilaricaListTable.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
         let elementList: ShoppingList = exampleList[indexPath.row]

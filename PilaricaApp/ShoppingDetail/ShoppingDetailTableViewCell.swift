@@ -9,6 +9,7 @@ import UIKit
 
 class ShoppingDetailTableViewCell: UITableViewCell {
     
+    // MARK: - IBOutlets -
     @IBOutlet weak var checkBox: UISwitch!
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var unLabel: UILabel!

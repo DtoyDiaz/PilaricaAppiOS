@@ -9,7 +9,7 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
-    
+    // MARK: - IBOutlets -
     @IBOutlet weak var listNameLabel: UILabel!
     
     override func awakeFromNib() {
