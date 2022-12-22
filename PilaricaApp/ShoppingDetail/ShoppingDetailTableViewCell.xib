@@ -16,55 +16,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-K8-wHU">
-                        <rect key="frame" x="243" y="7" width="67" height="30"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="itemLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFS-rj-eoi">
-                        <rect key="frame" x="62" y="11" width="55.5" height="22"/>
+                        <rect key="frame" x="20" y="11" width="55.5" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omR-sd-pXU">
-                        <rect key="frame" x="196" y="11" width="45" height="22"/>
+                        <rect key="frame" x="255" y="11" width="45" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-Cu-nAb">
-                        <rect key="frame" x="8" y="7" width="51" height="30"/>
-                    </switch>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amountLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-xo-I5V">
-                        <rect key="frame" x="120" y="11" width="74" height="22"/>
+                        <rect key="frame" x="179" y="11" width="74" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="xuY-K8-wHU" secondAttribute="bottom" constant="7" id="3gl-TP-lVN"/>
-                    <constraint firstItem="zFS-rj-eoi" firstAttribute="leading" secondItem="sRN-Cu-nAb" secondAttribute="trailing" constant="5" id="8xK-gv-jjJ"/>
-                    <constraint firstAttribute="trailing" secondItem="xuY-K8-wHU" secondAttribute="trailing" constant="10" id="GQP-ol-7a1"/>
-                    <constraint firstItem="sRN-Cu-nAb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Ukq-vO-rTc"/>
+                    <constraint firstAttribute="trailing" secondItem="omR-sd-pXU" secondAttribute="trailing" constant="20" id="HK7-1b-mCM"/>
                     <constraint firstAttribute="bottom" secondItem="zFS-rj-eoi" secondAttribute="bottom" constant="11" id="W8l-3t-9Ze"/>
-                    <constraint firstItem="xuY-K8-wHU" firstAttribute="leading" secondItem="omR-sd-pXU" secondAttribute="trailing" constant="2" id="cAm-y8-TEG"/>
                     <constraint firstItem="omR-sd-pXU" firstAttribute="leading" secondItem="LPn-xo-I5V" secondAttribute="trailing" constant="2" id="cJv-4t-Kbh"/>
                     <constraint firstAttribute="bottom" secondItem="LPn-xo-I5V" secondAttribute="bottom" constant="11" id="dOs-e1-cvV"/>
                     <constraint firstItem="zFS-rj-eoi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="dQd-mk-Czv"/>
                     <constraint firstItem="LPn-xo-I5V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="fYX-AV-8SA"/>
-                    <constraint firstItem="sRN-Cu-nAb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mTS-An-d7x"/>
-                    <constraint firstAttribute="bottom" secondItem="sRN-Cu-nAb" secondAttribute="bottom" constant="7" id="p9t-h6-yXu"/>
-                    <constraint firstItem="xuY-K8-wHU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="tkD-V8-frC"/>
                     <constraint firstAttribute="bottom" secondItem="omR-sd-pXU" secondAttribute="bottom" constant="11" id="uOC-L1-Jnh"/>
                     <constraint firstItem="omR-sd-pXU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="veA-UM-Ing"/>
+                    <constraint firstItem="zFS-rj-eoi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vio-Qy-3Jp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="amountLabel" destination="LPn-xo-I5V" id="kFl-fd-FYv"/>
-                <outlet property="checkBox" destination="sRN-Cu-nAb" id="TZS-Gx-Z53"/>
                 <outlet property="itemLabel" destination="zFS-rj-eoi" id="8l5-OW-1jE"/>
                 <outlet property="unLabel" destination="omR-sd-pXU" id="2pr-uP-8Rk"/>
             </connections>
