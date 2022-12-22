@@ -24,6 +24,5 @@ class HomeTableViewCell: UITableViewCell {
         listNameLabel.text = exampleList.name
     }
     
-    @IBAction func deleteButton(_ sender: Any) {
-    }
+    
 }
