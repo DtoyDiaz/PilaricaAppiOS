@@ -38,12 +38,17 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-kS-oHY">
-                    <rect key="frame" x="20" y="229" width="374" height="800"/>
+                    <rect key="frame" x="20" y="229" width="374" height="500"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="800" id="deT-8l-m85"/>
+                        <constraint firstAttribute="height" constant="500" id="deT-8l-m85"/>
                     </constraints>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKf-V1-JPT">
+                    <rect key="frame" x="173.5" y="754" width="67" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,9 +56,11 @@
                 <constraint firstItem="NK2-kS-oHY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AQX-ee-Be2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KcI-jJ-MZM" secondAttribute="trailing" constant="20" id="F6X-wh-NNw"/>
                 <constraint firstItem="Xxf-3b-XHJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="LBI-PU-IYt"/>
+                <constraint firstItem="RKf-V1-JPT" firstAttribute="top" secondItem="NK2-kS-oHY" secondAttribute="bottom" constant="25" id="LnX-S6-tmv"/>
                 <constraint firstItem="Xxf-3b-XHJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="O3F-5t-Exh"/>
                 <constraint firstItem="KcI-jJ-MZM" firstAttribute="top" secondItem="Xxf-3b-XHJ" secondAttribute="bottom" constant="50" id="PX5-Yg-kdW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NK2-kS-oHY" secondAttribute="trailing" constant="20" id="SdV-Wg-dQC"/>
+                <constraint firstItem="RKf-V1-JPT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Vyf-7r-wkf"/>
                 <constraint firstItem="NK2-kS-oHY" firstAttribute="top" secondItem="KcI-jJ-MZM" secondAttribute="bottom" constant="30" id="Y8O-0v-GiW"/>
                 <constraint firstItem="KcI-jJ-MZM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dx5-nN-piz"/>
                 <constraint firstItem="KcI-jJ-MZM" firstAttribute="centerX" secondItem="Xxf-3b-XHJ" secondAttribute="centerX" id="exZ-PU-a1R"/>
