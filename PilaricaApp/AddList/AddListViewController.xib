@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddListViewController" customModule="PilaricaApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nameField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-Lj-qlw" customClass="UnderlinedTextField" customModule="PilaricaApp" customModuleProvider="target">
+                    <rect key="frame" x="25" y="69" width="364" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="descriptionField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-VK-e0i" customClass="UnderlinedTextField" customModule="PilaricaApp" customModuleProvider="target">
+                    <rect key="frame" x="25" y="128" width="364" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="addName" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RB-RL-IpT" customClass="UnderlinedTextField" customModule="PilaricaApp" customModuleProvider="target">
+                    <rect key="frame" x="52.5" y="187" width="91" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGt-7A-MXB" customClass="UnderlinedTextField" customModule="PilaricaApp" customModuleProvider="target">
+                    <rect key="frame" x="168.5" y="187" width="77" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-hq-Arf">
+                    <rect key="frame" x="270.5" y="187" width="63" height="30"/>
+                    <menu key="menu" id="bgE-NE-JUI">
+                        <children>
+                            <command title="Item 1" id="zOg-5w-hx2"/>
+                            <command title="Item 2" id="izx-du-42t"/>
+                        </children>
+                    </menu>
+                    <state key="normal" title="unButton"/>
+                    <connections>
+                        <action selector="pickerButton:" destination="-1" eventType="touchUpInside" id="u9r-F6-vid"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7RB-RL-IpT" firstAttribute="top" secondItem="puv-VK-e0i" secondAttribute="bottom" constant="25" id="5M3-93-9Jj"/>
+                <constraint firstItem="VGt-7A-MXB" firstAttribute="top" secondItem="puv-VK-e0i" secondAttribute="bottom" constant="25" id="Iot-h1-NwG"/>
+                <constraint firstItem="puv-VK-e0i" firstAttribute="top" secondItem="A0Q-Lj-qlw" secondAttribute="bottom" constant="25" id="ZvJ-Ia-rNE"/>
+                <constraint firstItem="JXN-hq-Arf" firstAttribute="leading" secondItem="VGt-7A-MXB" secondAttribute="trailing" constant="25" id="aIe-mj-Gbi"/>
+                <constraint firstItem="puv-VK-e0i" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cdf-pX-EsG"/>
+                <constraint firstItem="A0Q-Lj-qlw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cmb-Jg-aqg"/>
+                <constraint firstItem="JXN-hq-Arf" firstAttribute="top" secondItem="puv-VK-e0i" secondAttribute="bottom" constant="25" id="gKI-ya-18i"/>
+                <constraint firstItem="VGt-7A-MXB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="n8B-ga-JH2"/>
+                <constraint firstItem="VGt-7A-MXB" firstAttribute="leading" secondItem="7RB-RL-IpT" secondAttribute="trailing" constant="25" id="oIP-If-9TI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A0Q-Lj-qlw" secondAttribute="trailing" constant="25" id="pEM-G6-FEI"/>
+                <constraint firstItem="puv-VK-e0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="y44-Lq-w6X"/>
+                <constraint firstItem="A0Q-Lj-qlw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="zM6-AC-y2G"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

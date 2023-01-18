@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C62B1BBB29774BD300D39457 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B1BBA29774BD300D39457 /* UnderlinedTextField.swift */; };
 		C6440D2E293FA10700917CD1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D2C293FA10700917CD1 /* HomeTableViewCell.swift */; };
 		C6440D2F293FA10700917CD1 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D2D293FA10700917CD1 /* HomeTableViewCell.xib */; };
-		C6440D32293FA14200917CD1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D30293FA14200917CD1 /* HomeTableViewController.swift */; };
-		C6440D33293FA14200917CD1 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D31293FA14200917CD1 /* HomeTableViewController.xib */; };
 		C6440D35293FFA8800917CD1 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D34293FFA8800917CD1 /* ShoppingList.swift */; };
 		C6440D3D2947CC1700917CD1 /* ShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D3B2947CC1700917CD1 /* ShoppingDetailViewController.swift */; };
 		C6440D3E2947CC1700917CD1 /* ShoppingDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D3C2947CC1700917CD1 /* ShoppingDetailViewController.xib */; };
 		C6440D422949316400917CD1 /* ShoppingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */; };
 		C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */; };
 		C6440D45294A1C2B00917CD1 /* AjiacoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D44294A1C2B00917CD1 /* AjiacoList.swift */; };
+		C6440D502956010000917CD1 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D4E2956010000917CD1 /* AddItemViewController.swift */; };
+		C6440D512956010000917CD1 /* AddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D4F2956010000917CD1 /* AddItemViewController.xib */; };
+		C6440D552959FD3300917CD1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D532959FD3300917CD1 /* HomeViewController.swift */; };
+		C6440D562959FD3300917CD1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D542959FD3300917CD1 /* HomeViewController.xib */; };
+		C6440D5A295A198D00917CD1 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6440D58295A198D00917CD1 /* AddListViewController.swift */; };
+		C6440D5B295A198D00917CD1 /* AddListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6440D59295A198D00917CD1 /* AddListViewController.xib */; };
 		C6AC155D29382644008202FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC155C29382644008202FA /* AppDelegate.swift */; };
 		C6AC155F29382644008202FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC155E29382644008202FA /* SceneDelegate.swift */; };
 		C6AC156129382644008202FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC156029382644008202FA /* ViewController.swift */; };
@@ -27,16 +32,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C62B1BBA29774BD300D39457 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		C6440D2C293FA10700917CD1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C6440D2D293FA10700917CD1 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		C6440D30293FA14200917CD1 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		C6440D31293FA14200917CD1 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
 		C6440D34293FFA8800917CD1 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		C6440D3B2947CC1700917CD1 /* ShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailViewController.swift; sourceTree = "<group>"; };
 		C6440D3C2947CC1700917CD1 /* ShoppingDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingDetailViewController.xib; sourceTree = "<group>"; };
 		C6440D402949316400917CD1 /* ShoppingDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailTableViewCell.swift; sourceTree = "<group>"; };
 		C6440D412949316400917CD1 /* ShoppingDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C6440D44294A1C2B00917CD1 /* AjiacoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjiacoList.swift; sourceTree = "<group>"; };
+		C6440D4E2956010000917CD1 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		C6440D4F2956010000917CD1 /* AddItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemViewController.xib; sourceTree = "<group>"; };
+		C6440D532959FD3300917CD1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C6440D542959FD3300917CD1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C6440D58295A198D00917CD1 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+		C6440D59295A198D00917CD1 /* AddListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddListViewController.xib; sourceTree = "<group>"; };
 		C6AC155929382644008202FA /* PilaricaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilaricaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC155C29382644008202FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC155E29382644008202FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,11 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C62B1BB929774BAF00D39457 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C62B1BBA29774BD300D39457 /* UnderlinedTextField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C6440D26293F94BA00917CD1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C6440D30293FA14200917CD1 /* HomeTableViewController.swift */,
-				C6440D31293FA14200917CD1 /* HomeTableViewController.xib */,
+				C6440D532959FD3300917CD1 /* HomeViewController.swift */,
+				C6440D542959FD3300917CD1 /* HomeViewController.xib */,
 				C6440D2C293FA10700917CD1 /* HomeTableViewCell.swift */,
 				C6440D2D293FA10700917CD1 /* HomeTableViewCell.xib */,
 				C6440D34293FFA8800917CD1 /* ShoppingList.swift */,
@@ -81,6 +99,24 @@
 				C6440D44294A1C2B00917CD1 /* AjiacoList.swift */,
 			);
 			path = ShoppingDetail;
+			sourceTree = "<group>";
+		};
+		C6440D4D2955FE9A00917CD1 /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				C6440D4E2956010000917CD1 /* AddItemViewController.swift */,
+				C6440D4F2956010000917CD1 /* AddItemViewController.xib */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
+		C6440D57295A195E00917CD1 /* AddList */ = {
+			isa = PBXGroup;
+			children = (
+				C6440D58295A198D00917CD1 /* AddListViewController.swift */,
+				C6440D59295A198D00917CD1 /* AddListViewController.xib */,
+			);
+			path = AddList;
 			sourceTree = "<group>";
 		};
 		C6AC155029382644008202FA = {
@@ -102,6 +138,9 @@
 		C6AC155B29382644008202FA /* PilaricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				C62B1BB929774BAF00D39457 /* Utils */,
+				C6440D57295A195E00917CD1 /* AddList */,
+				C6440D4D2955FE9A00917CD1 /* AddItem */,
 				C6440D27293F951400917CD1 /* ShoppingDetail */,
 				C6440D26293F94BA00917CD1 /* Home */,
 				C6AC155C29382644008202FA /* AppDelegate.swift */,
@@ -175,12 +214,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6440D3E2947CC1700917CD1 /* ShoppingDetailViewController.xib in Resources */,
+				C6440D512956010000917CD1 /* AddItemViewController.xib in Resources */,
 				C6AC156C29382648008202FA /* LaunchScreen.storyboard in Resources */,
 				C6AC156929382648008202FA /* Assets.xcassets in Resources */,
 				C6AC156429382644008202FA /* Main.storyboard in Resources */,
 				C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */,
-				C6440D33293FA14200917CD1 /* HomeTableViewController.xib in Resources */,
 				C6440D2F293FA10700917CD1 /* HomeTableViewCell.xib in Resources */,
+				C6440D562959FD3300917CD1 /* HomeViewController.xib in Resources */,
+				C6440D5B295A198D00917CD1 /* AddListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,15 +233,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AC156129382644008202FA /* ViewController.swift in Sources */,
-				C6440D32293FA14200917CD1 /* HomeTableViewController.swift in Sources */,
 				C6440D2E293FA10700917CD1 /* HomeTableViewCell.swift in Sources */,
 				C6440D3D2947CC1700917CD1 /* ShoppingDetailViewController.swift in Sources */,
 				C6AC155D29382644008202FA /* AppDelegate.swift in Sources */,
 				C6AC156729382644008202FA /* PilaricaApp.xcdatamodeld in Sources */,
+				C62B1BBB29774BD300D39457 /* UnderlinedTextField.swift in Sources */,
 				C6440D45294A1C2B00917CD1 /* AjiacoList.swift in Sources */,
+				C6440D5A295A198D00917CD1 /* AddListViewController.swift in Sources */,
 				C6440D35293FFA8800917CD1 /* ShoppingList.swift in Sources */,
 				C6AC155F29382644008202FA /* SceneDelegate.swift in Sources */,
 				C6440D422949316400917CD1 /* ShoppingDetailTableViewCell.swift in Sources */,
+				C6440D502956010000917CD1 /* AddItemViewController.swift in Sources */,
+				C6440D552959FD3300917CD1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

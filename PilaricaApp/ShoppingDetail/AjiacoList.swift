@@ -12,4 +12,5 @@ struct AjiacoList{
     var itemName: String
     var itemAmount: Double
     var itemUn: String
+    var isSelected: Bool
 }

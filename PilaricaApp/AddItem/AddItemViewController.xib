@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddItemViewController" customModule="PilaricaApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addAmountItemTextField" destination="6S5-yq-nKn" id="JA2-yx-Rmt"/>
+                <outlet property="addNameItemTextField" destination="GDF-oR-itP" id="fKD-5d-UIM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQT-sh-ayN">
+                    <rect key="frame" x="172" y="94" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="addName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDF-oR-itP" customClass="UnderlinedTextField" customModule="PilaricaApp" customModuleProvider="target">
+                    <rect key="frame" x="54" y="165" width="90.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6S5-yq-nKn" customClass="UnderlinedTextField" customModule="PilaricaApp" customModuleProvider="target">
+                    <rect key="frame" x="168.5" y="165" width="77" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puz-et-UKI">
+                    <rect key="frame" x="269.5" y="166.5" width="67" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="pickerButton:" destination="-1" eventType="touchUpInside" id="8i1-ye-0fM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cQT-sh-ayN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1zk-2w-fYS"/>
+                <constraint firstItem="6S5-yq-nKn" firstAttribute="leading" secondItem="GDF-oR-itP" secondAttribute="trailing" constant="24" id="BeP-DW-zCx"/>
+                <constraint firstItem="GDF-oR-itP" firstAttribute="top" secondItem="cQT-sh-ayN" secondAttribute="bottom" constant="50" id="IUH-fH-dbu"/>
+                <constraint firstItem="6S5-yq-nKn" firstAttribute="centerX" secondItem="cQT-sh-ayN" secondAttribute="centerX" id="JKy-Nr-trf"/>
+                <constraint firstItem="6S5-yq-nKn" firstAttribute="top" secondItem="cQT-sh-ayN" secondAttribute="bottom" constant="50" id="RZ0-7A-dcN"/>
+                <constraint firstItem="Puz-et-UKI" firstAttribute="centerY" secondItem="6S5-yq-nKn" secondAttribute="centerY" id="hZv-pv-Xof"/>
+                <constraint firstItem="Puz-et-UKI" firstAttribute="leading" secondItem="6S5-yq-nKn" secondAttribute="trailing" constant="24" id="l6T-Pd-r2M"/>
+                <constraint firstItem="cQT-sh-ayN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="tiS-oh-agx"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

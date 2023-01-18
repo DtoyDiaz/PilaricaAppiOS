@@ -10,4 +10,5 @@ import Foundation
 struct ShoppingList{
     
     var name: String
+    var isSelected: Bool
 }

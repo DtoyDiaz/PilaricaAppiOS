@@ -9,20 +9,18 @@ import UIKit
 
 class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let ajiacoList: [AjiacoList] = [
-        AjiacoList(itemName: "Pechuga", itemAmount: 2, itemUn: "Un"),
-        AjiacoList(itemName: "Papa pastusa", itemAmount: 0.5, itemUn: "Lb"),
-        AjiacoList(itemName: "Papa criolla", itemAmount: 3, itemUn: "Lb"),
-        AjiacoList(itemName: "Guascas", itemAmount: 1, itemUn: "Un"),
-        AjiacoList(itemName: "Aracacha", itemAmount: 1, itemUn: "Lb"),
-        AjiacoList(itemName: "Arveja", itemAmount: 0.25, itemUn: "Lb"),
-        AjiacoList(itemName: "Alcaparras", itemAmount: 1, itemUn: "Paquete"),
-        AjiacoList(itemName: "Zanahoria", itemAmount: 1, itemUn: "Lb"),
-        AjiacoList(itemName: "Crema de leche", itemAmount: 1, itemUn: "Paquete")
+    var ajiacoList: [AjiacoList] = [
+        AjiacoList(itemName: "Pechuga", itemAmount: 2, itemUn: "Un", isSelected: false),
+        AjiacoList(itemName: "Papa pastusa", itemAmount: 0.5, itemUn: "Lb", isSelected: false),
+        AjiacoList(itemName: "Papa criolla", itemAmount: 3, itemUn: "Lb", isSelected: false),
+        AjiacoList(itemName: "Guascas", itemAmount: 1, itemUn: "Un", isSelected: false),
+        AjiacoList(itemName: "Aracacha", itemAmount: 1, itemUn: "Lb", isSelected: false),
+        AjiacoList(itemName: "Alcaparras", itemAmount: 1, itemUn: "Paquete", isSelected: false),
+        AjiacoList(itemName: "Zanahoria", itemAmount: 1, itemUn: "Lb", isSelected: false),
+        AjiacoList(itemName: "Crema de leche", itemAmount: 1, itemUn: "Paquete", isSelected: false)
     ]
     
     @IBOutlet weak var listNameLabel: UILabel!
-    @IBOutlet weak var descriptionListTextField: UITextField!
     @IBOutlet weak var itemListTableView: UITableView!
     
     override func viewDidLoad() {
@@ -32,6 +30,18 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         
         let shoppingDetailViewCell = UINib(nibName: "ShoppingDetailTableViewCell", bundle: nil)
         itemListTableView.register(shoppingDetailViewCell, forCellReuseIdentifier: "ShoppingViewCell")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "AddItem",
+            style: .plain,
+            target: self,
+            action: #selector(addItemTapped)
+        )
+    }
+    
+    @objc func addItemTapped(){
+        let nextVC = AddItemViewController(nibName: "AddItemViewController", bundle: nil)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,24 +52,30 @@ class ShoppingDetailViewController: UIViewController, UITableViewDataSource, UIT
         let cellDetail: ShoppingDetailTableViewCell = itemListTableView.dequeueReusableCell(withIdentifier: "ShoppingViewCell", for: indexPath) as! ShoppingDetailTableViewCell
         let itemDetailList: AjiacoList = ajiacoList[indexPath.row]
         cellDetail.cellConfiguration(ajiacoList: itemDetailList)
+        cellDetail.delegate = self
+        cellDetail.row = indexPath.row
         return cellDetail
-    }
-    
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let checkAction = UIContextualAction(style: .destructive, title: "check") { (action, view, handler) in
-                    print("Check Action Tapped")
-                }
-                checkAction.backgroundColor = .green
-                let configuration = UISwipeActionsConfiguration(actions: [checkAction])
-                return configuration
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, handler) in
-                    print("Delete Action Tapped")
-                }
-                deleteAction.backgroundColor = .red
-                let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
-                return configuration
+            self.ajiacoList.remove(at: indexPath.row)
+            self.itemListTableView.reloadData()
+        }
+        deleteAction.backgroundColor = .red
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        return configuration
     }
+}
+
+extension ShoppingDetailViewController: ShoppingDetailTableCellDelegate {
+    
+    func toggleRow(row: Int) {
+        self.ajiacoList[row].isSelected = !self.ajiacoList[row].isSelected
+        self.itemListTableView.reloadData()
+    }
+}
+
+protocol ShoppingDetailTableCellDelegate {
+    func toggleRow(row: Int)
 }

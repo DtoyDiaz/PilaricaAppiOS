@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func deleteButton(_ sender: Any) {
-        let nextVC = HomeTableViewController(nibName: "HomeTableViewController", bundle: nil)
+        let nextVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     
