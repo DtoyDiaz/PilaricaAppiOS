@@ -33,6 +33,42 @@
                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkR-ly-1vz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEN-E9-TVX">
+                                <rect key="frame" x="25" y="638" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PVy-63-3bc"/>
+                                    <constraint firstAttribute="width" constant="50" id="zZz-q3-FxC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgX-r2-bqS">
+                                <rect key="frame" x="173" y="636" width="200.5" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="termsConditionsButton">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="termsConditionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqW-Oe-Z7c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AceptLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD8-8c-uJV">
+                                <rect key="frame" x="85" y="643" width="86" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzu-jM-k61">
+                                <rect key="frame" x="168" y="690.5" width="211" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="termsConditionsButton2">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="termsConditionsButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFo-Ob-9HB"/>
+                                    <action selector="termsConditionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ayu-Xf-fkw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -40,16 +76,27 @@
                             <constraint firstItem="C4E-ge-it1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="3Bm-Dh-xM3"/>
                             <constraint firstItem="4l6-nQ-KVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="6mr-U9-M7Z"/>
                             <constraint firstItem="4l6-nQ-KVI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="KdM-GU-GLe"/>
+                            <constraint firstItem="zzu-jM-k61" firstAttribute="top" secondItem="VgX-r2-bqS" secondAttribute="bottom" constant="20" id="NhS-1z-6L3"/>
                             <constraint firstItem="C4E-ge-it1" firstAttribute="top" secondItem="4l6-nQ-KVI" secondAttribute="bottom" constant="180" id="Sxs-Aa-hwl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4l6-nQ-KVI" secondAttribute="trailing" constant="87" id="W03-xF-cnG"/>
+                            <constraint firstItem="CEN-E9-TVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="XKa-8w-Wj2"/>
+                            <constraint firstItem="OD8-8c-uJV" firstAttribute="centerY" secondItem="CEN-E9-TVX" secondAttribute="centerY" id="cnh-qa-YhK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4E-ge-it1" secondAttribute="trailing" constant="150" id="gNQ-K0-4O6"/>
+                            <constraint firstItem="VgX-r2-bqS" firstAttribute="leading" secondItem="OD8-8c-uJV" secondAttribute="trailing" constant="2" id="qpN-Lv-ajn"/>
+                            <constraint firstItem="CEN-E9-TVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="sJq-O1-3Y9"/>
+                            <constraint firstItem="OD8-8c-uJV" firstAttribute="leading" secondItem="CEN-E9-TVX" secondAttribute="trailing" constant="10" id="sxK-p4-CVI"/>
+                            <constraint firstItem="VgX-r2-bqS" firstAttribute="centerY" secondItem="OD8-8c-uJV" secondAttribute="centerY" id="tGM-q3-NNT"/>
+                            <constraint firstItem="zzu-jM-k61" firstAttribute="centerX" secondItem="VgX-r2-bqS" secondAttribute="centerX" id="yWb-g2-F0h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8eA-l2-JB6"/>
+                    <connections>
+                        <outlet property="checkBoxButton" destination="CEN-E9-TVX" id="g6E-4N-lta"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315.9420289855072" y="387.72321428571428"/>
+            <point key="canvasLocation" x="1314.4927536231885" y="387.72321428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ixd-5D-uq8">
@@ -71,6 +118,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

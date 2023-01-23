@@ -29,6 +29,8 @@
 		C6AC156729382644008202FA /* PilaricaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6AC156529382644008202FA /* PilaricaApp.xcdatamodeld */; };
 		C6AC156929382648008202FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC156829382648008202FA /* Assets.xcassets */; };
 		C6AC156C29382648008202FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC156A29382648008202FA /* LaunchScreen.storyboard */; };
+		C6C37D402979867C00A4E97D /* HyperlinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C37D3E2979867C00A4E97D /* HyperlinkViewController.swift */; };
+		C6C37D412979867C00A4E97D /* HyperlinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C37D3F2979867C00A4E97D /* HyperlinkViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		C6AC156829382648008202FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6AC156B29382648008202FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6AC156D29382648008202FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6C37D3E2979867C00A4E97D /* HyperlinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperlinkViewController.swift; sourceTree = "<group>"; };
+		C6C37D3F2979867C00A4E97D /* HyperlinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HyperlinkViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		C6AC155B29382644008202FA /* PilaricaApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6C37D3D2979863100A4E97D /* Hyperlink */,
 				C62B1BB929774BAF00D39457 /* Utils */,
 				C6440D57295A195E00917CD1 /* AddList */,
 				C6440D4D2955FE9A00917CD1 /* AddItem */,
@@ -153,6 +158,15 @@
 				C6AC156529382644008202FA /* PilaricaApp.xcdatamodeld */,
 			);
 			path = PilaricaApp;
+			sourceTree = "<group>";
+		};
+		C6C37D3D2979863100A4E97D /* Hyperlink */ = {
+			isa = PBXGroup;
+			children = (
+				C6C37D3E2979867C00A4E97D /* HyperlinkViewController.swift */,
+				C6C37D3F2979867C00A4E97D /* HyperlinkViewController.xib */,
+			);
+			path = Hyperlink;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +232,7 @@
 				C6AC156C29382648008202FA /* LaunchScreen.storyboard in Resources */,
 				C6AC156929382648008202FA /* Assets.xcassets in Resources */,
 				C6AC156429382644008202FA /* Main.storyboard in Resources */,
+				C6C37D412979867C00A4E97D /* HyperlinkViewController.xib in Resources */,
 				C6440D432949316400917CD1 /* ShoppingDetailTableViewCell.xib in Resources */,
 				C6440D2F293FA10700917CD1 /* HomeTableViewCell.xib in Resources */,
 				C6440D562959FD3300917CD1 /* HomeViewController.xib in Resources */,
@@ -233,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AC156129382644008202FA /* ViewController.swift in Sources */,
+				C6C37D402979867C00A4E97D /* HyperlinkViewController.swift in Sources */,
 				C6440D2E293FA10700917CD1 /* HomeTableViewCell.swift in Sources */,
 				C6440D3D2947CC1700917CD1 /* ShoppingDetailViewController.swift in Sources */,
 				C6AC155D29382644008202FA /* AppDelegate.swift in Sources */,
