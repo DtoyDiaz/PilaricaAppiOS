@@ -12,7 +12,6 @@ class HyperlinkViewController: UIViewController, UITextViewDelegate, WKNavigatio
     
     @IBOutlet weak var hidedWebView: WKWebView!
     @IBOutlet weak var urlTextField: UITextField!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,24 +26,6 @@ class HyperlinkViewController: UIViewController, UITextViewDelegate, WKNavigatio
         let url: URL = URL(string: urlString)!
         let urlRequest: URLRequest = URLRequest (url: url)
         hidedWebView.load(urlRequest)
-        activityIndicatorView.startAnimating()
         urlTextField.text = urlString
-    }
-    
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        activityIndicatorView.startAnimating()
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let urlString:String = urlTextField.text!
-        let url:URL = URL(string: urlString)!
-        let urlRequest:URLRequest = URLRequest(url: url)
-        hidedWebView.load(urlRequest)
-        urlTextField.resignFirstResponder()
-        return true
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }

@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HyperlinkViewController" customModule="PilaricaApp" customModuleProvider="target">
             <connections>
-                <outlet property="activityIndicatorView" destination="djT-5h-Zlc" id="xyY-vr-oKh"/>
                 <outlet property="hidedWebView" destination="eJ2-h3-FBP" id="HF8-bn-mKt"/>
                 <outlet property="urlTextField" destination="LPU-7f-TUk" id="FF5-7s-izy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,10 +28,6 @@
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="djT-5h-Zlc">
-                    <rect key="frame" x="197" y="193" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </activityIndicatorView>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LPU-7f-TUk">
                     <rect key="frame" x="33" y="125" width="97" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -58,17 +58,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzu-jM-k61">
-                                <rect key="frame" x="168" y="690.5" width="211" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="termsConditionsButton2">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="termsConditionsButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFo-Ob-9HB"/>
-                                    <action selector="termsConditionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ayu-Xf-fkw"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -76,7 +65,6 @@
                             <constraint firstItem="C4E-ge-it1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="3Bm-Dh-xM3"/>
                             <constraint firstItem="4l6-nQ-KVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="6mr-U9-M7Z"/>
                             <constraint firstItem="4l6-nQ-KVI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="KdM-GU-GLe"/>
-                            <constraint firstItem="zzu-jM-k61" firstAttribute="top" secondItem="VgX-r2-bqS" secondAttribute="bottom" constant="20" id="NhS-1z-6L3"/>
                             <constraint firstItem="C4E-ge-it1" firstAttribute="top" secondItem="4l6-nQ-KVI" secondAttribute="bottom" constant="180" id="Sxs-Aa-hwl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4l6-nQ-KVI" secondAttribute="trailing" constant="87" id="W03-xF-cnG"/>
                             <constraint firstItem="CEN-E9-TVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="XKa-8w-Wj2"/>
@@ -86,7 +74,6 @@
                             <constraint firstItem="CEN-E9-TVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="sJq-O1-3Y9"/>
                             <constraint firstItem="OD8-8c-uJV" firstAttribute="leading" secondItem="CEN-E9-TVX" secondAttribute="trailing" constant="10" id="sxK-p4-CVI"/>
                             <constraint firstItem="VgX-r2-bqS" firstAttribute="centerY" secondItem="OD8-8c-uJV" secondAttribute="centerY" id="tGM-q3-NNT"/>
-                            <constraint firstItem="zzu-jM-k61" firstAttribute="centerX" secondItem="VgX-r2-bqS" secondAttribute="centerX" id="yWb-g2-F0h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8eA-l2-JB6"/>

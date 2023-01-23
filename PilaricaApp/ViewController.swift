@@ -21,12 +21,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func termsConditionsButton(_ sender: Any) {
-        if let myURL = URL(string: "https://www.youtube.com/watch?v=ydc2eb1LJZA") {
-            UIApplication.shared.open(myURL, options: [:], completionHandler: nil)
-        }
-    }
-    
-    @IBAction func termsConditionsButton2(_ sender: Any) {
         let nextVC = HyperlinkViewController(nibName: "HyperlinkViewController", bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
